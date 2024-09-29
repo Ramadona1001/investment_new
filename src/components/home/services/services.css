@@ -1,0 +1,12 @@
+.back {
+  transform: rotateY(180deg);
+}
+.face {
+  backface-visibility: hidden;
+}
+.box:hover {
+  transform: rotateY(-180deg);
+}
+.box {
+  transition: transform 1s;
+}

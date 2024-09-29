@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap");
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.mapboxgl-ctrl-attrib-inner,
+a.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+.swiper-pagination-bullet {
+  background-color: gray !important; /* اللون الافتراضي للنقاط */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: teal !important; /* اللون للنقطة الفعالة */
+}
+
+.arrow_show {
+  animation: arrow 1.25s linear infinite;
+}
+#new_title {
+  background: linear-gradient(
+    185deg,
+    rgba(213, 170, 20, 0.27) 0%,
+    rgba(2, 8, 7, 0) 58%
+  );
+}
+
+@media (max-width: 560px) {
+  #footer-img {
+    background-image: url("/footer_icon.png");
+    background-size: contain;
+  }
+}
+
+@media (min-width: 560px) {
+  #footer-img {
+    background-image: url("/footer.png");
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@keyframes arrow {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(-5px);
+  }
+}
